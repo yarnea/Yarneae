@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Panel | Yarnea</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="admin">
+  <h2>Admin Panel</h2>
+
+  <!-- ADD / EDIT FORM -->
+  <input type="hidden" id="productId">
+
+  <input type="text" id="name" placeholder="Product Name">
+  <input type="number" id="price" placeholder="Price">
+  <input type="text" id="image" placeholder="Image URL">
+
+  <button onclick="saveProduct()">Save Product</button>
+
+  <h3>Existing Products</h3>
+  <div id="adminProductList"></div>
+</section>
+
+<script src="admin.js"></script>
+</body>
+</html>
